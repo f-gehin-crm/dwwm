@@ -1,0 +1,51 @@
+
+
+#container {
+width: 100vw;
+height: 100vw;
+background-color: #5C94FC; 
+display:flex;
+align-items: center;
+justify-content: center;
+
+}
+
+
+
+
+#box {
+    
+    width: 80vw;
+    height: 800px;
+    background-color: #5C94FC; 
+    border : 0.2rem solid;
+}
+
+.b1 {
+    width : 20vw;
+    height : 200px;
+    background-color: #4976C9;
+   /* border : 0.2rem solid;
+    border-top : none;*/
+}
+
+.b2 {
+    width: 40vw;
+    height: 200px;
+    background-color: #375897;
+    border : 0.2 rem solid;
+}
+
+.b3 {
+    width: 60vw;
+    height: 200px;
+    background-color: #243B64;
+    border : 0.2 rem solid;
+}
+
+.b4 {
+    width: 80vw;
+    height: 200px;
+    background-color: #121D32;
+    border : 0.2 rem solid;
+}

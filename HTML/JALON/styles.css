@@ -1,0 +1,59 @@
+.card {
+    height : 400px;
+    width : 800px;
+    margin: auto;
+    background:
+  linear-gradient(217deg, rgba(26, 255, 0, 0.8), rgb(255 0 0 / 0) 70.71%),
+  linear-gradient(127deg, rgba(89, 0, 255, 0.8), rgb(0 255 0 / 0) 70.71%),
+  linear-gradient(336deg, rgb(0 0 255 / 0.8), rgb(0 0 255 / 0) 70.71%);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   
+    font-size: 19px;
+    color : white;
+    box-shadow: 10px 5px 5px rgb(128, 81, 163);
+    
+}
+
+
+.text {
+    margin: 50px auto;
+    min-height : 200px;
+    width:  800px;
+    background-color: whitesmoke ;
+    border-radius : 30px;
+    box-shadow: 10px 5px 5px rgb(41, 2, 2);
+
+}
+
+body {
+    background-color: #e0e8e2 ;
+}
+
+.Id {
+    padding: 30px;
+}
+
+.photo {
+padding: 120px 60px;
+border-radius: 50%;
+border-radius: 50%;
+}
+
+.img {
+   
+    border-radius: 50%;
+}
+
+.text {
+    font-size : 21px;
+    text-align: justufy;
+}
+
+.deco {
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}

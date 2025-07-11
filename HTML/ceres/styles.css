@@ -1,0 +1,59 @@
+body {
+    display:flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color:#E0E2E8;
+    flex-direction: column;
+}
+
+.titre {
+    display:flex;
+   /* text-align: center;
+    justify-content: center; */
+
+    font-size : 70px;
+}
+
+.C , .EE {
+    color : #36A23E;
+    margin-right:18px;
+    margin-left : 18px;
+
+}
+
+.E , .S {
+    color : #FF6633;
+
+    margin-right : 18px; ;
+
+}
+
+.R {
+    color : #CC0066;
+
+}
+
+.img {
+    display :flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.image {
+    height: 400px;
+    width : 400px;
+    margin : 60px;
+}
+
+.text {
+    font-size: 35px;
+    text-align: center;
+}
+
+hr{
+    background-color: black;
+    width: 117rem;
+    height: 1px;
+}

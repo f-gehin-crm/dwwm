@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+     <h1>Formulaire</h1>
+    <form id="myForm">
+        <label for="prenom">Prénom:</label>
+        <input type="text" id="prenom" name="prenom">
+
+        <label for="age">Âge:</label>
+        <input type="text" id="age" name="age">
+
+        <button type="button" onclick="valider()">Valider</button>
+        <button type="reset" onclick="vider()">Vider le formulaire</button>
+    </form>
+
+    <div id="result"></div>
+    <script src="script.js"></script>
+
+    
+</body>
+</html>

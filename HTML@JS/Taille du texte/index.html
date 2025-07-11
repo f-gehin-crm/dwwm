@@ -1,0 +1,62 @@
+
+    <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Changer la taille du texte</title>
+   
+</head>
+<body>
+    <h1>Changer la taille du texte</h1>
+    <button onclick="increaseFontSize()">Augmenter la taille du texte</button>
+    <button onclick="decreaseFontSize()">Diminuer la taille du texte</button>
+    <span>
+        <label for="fontSize">Taille du texte :</label>
+        <input type="number" id="fontSize" min="8" max="48" value="16" onchange="setFontSize(this.value)">
+    </span>
+    <p id="textParagraph">
+        Dans la majorité des navigateurs, la taille du texte est de 16px par défaut. Ce texte est un exemple de paragraphe contenant plus de 200 caractères. Vous pouvez utiliser les boutons ci-dessus pour augmenter ou diminuer la taille du texte. Cela vous permet de voir comment le texte s'adapte à différentes tailles. C'est une fonctionnalité utile pour les sites web qui souhaitent offrir une meilleure accessibilité à leurs utilisateurs. En ajustant la taille du texte, vous pouvez rendre le contenu plus lisible pour les personnes ayant des difficultés visuelles. N'hésitez pas à essayer différentes tailles pour voir ce qui vous convient le mieux. Merci de votre attention.
+    </p>
+
+    <script>
+        let currentSize = 16;
+        const textParagraph = document.getElementById('textParagraph');
+        const fontSizeInput = document.getElementById('fontSize');
+
+        function increaseFontSize() {
+            currentSize = currentSize + 1;
+            if (currentSize > 48) {
+                currentSize = 16;
+            }
+            updateFontSize();
+        }
+
+        function decreaseFontSize() {
+            currentSize = currentSize - 1;
+            if (currentSize < 8) {
+                currentSize = 16;
+            }
+            updateFontSize();
+        }
+
+        function setFontSize(size) {
+            currentSize = parseInt(size);
+            if (currentSize < 8 || currentSize > 48) {
+                currentSize = 16;
+                fontSizeInput.value = 16;
+            }
+            updateFontSize();
+        }
+
+        function updateFontSize() {
+            textParagraph.style.fontSize = currentSize + 'px';
+            fontSizeInput.value = currentSize;
+        }
+    </script>
+
+
+    
+</body>
+</html>
